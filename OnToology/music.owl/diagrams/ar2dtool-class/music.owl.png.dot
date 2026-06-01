@@ -1,0 +1,37 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; ":percusion" ":pop" ":metal" ":ska" ":genero" ":guitarrista" ":viento" ":clasico" ":balada" ":rock" ":cuerdas" ":instrumento" ":dance" ":artista" ; /*classes style*/
+	":ska" -> "-10aedd7e:19e840c3c9d:-7fee" [ label = "owl:intersectionOf" ];
+	":metal" -> "-10aedd7e:19e840c3c9d:-7ff5" [ label = "owl:intersectionOf" ];
+	":instrumento" -> ":genero" [ label = "owl:disjointWith" ];
+	":balada" -> "-10aedd7e:19e840c3c9d:-7fe7" [ label = "owl:intersectionOf" ];
+	":dance" -> "-10aedd7e:19e840c3c9d:-7fe4" [ label = "owl:intersectionOf" ];
+	":guitarrista" -> "-10aedd7e:19e840c3c9d:-7fe1" [ label = "owl:intersectionOf" ];
+	":clasico" -> "-10aedd7e:19e840c3c9d:-7ffc" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> ":toca" [ label = "owl:onProperty" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> ":rock" [ label = "rdf:first" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7fec" [ label = "rdf:rest" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7fe2" [ label = "rdf:rest" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7fe5" [ label = "rdf:rest" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7fe8" [ label = "rdf:rest" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7ff1" [ label = "rdf:rest" ];
+	"NULL" -> ":percusion" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7fdf" [ label = "rdf:rest" ];
+	"NULL" -> ":rock" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":subgenero" [ label = "owl:onProperty" ];
+	"NULL" -> ":cuerdas" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":viento" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> ":pop" [ label = "rdf:first" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7ff3" [ label = "rdf:rest" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "-10aedd7e:19e840c3c9d:-7fea" [ label = "rdf:rest" ];
+	"NULL" -> ":artista" [ label = "rdf:first" ];
+	"NULL" -> ":pop" [ label = "owl:allValuesFrom" ];
+	":instrumento" -> ":artista" [ label = ":toca" ];
+
+}

@@ -1,0 +1,20 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; ":percusion" ":organo" ":teclado" ":pop" ":timbales" ":saxofon" ":genero" ":viento" ":bateria" ":rock" ":guitarra" ":cuerdas" ":sintetizador" ":bajo" ":instrumento" ":trompeta" ; /*classes style*/
+	":saxofon" -> ":viento" [ label = "rdfs:subClassOf" ];
+	":guitarra" -> ":cuerdas" [ label = "rdfs:subClassOf" ];
+	":cuerdas" -> ":instrumento" [ label = "rdfs:subClassOf" ];
+	":organo" -> ":teclado" [ label = "rdfs:subClassOf" ];
+	":percusion" -> ":instrumento" [ label = "rdfs:subClassOf" ];
+	":teclado" -> ":instrumento" [ label = "rdfs:subClassOf" ];
+	":trompeta" -> ":viento" [ label = "rdfs:subClassOf" ];
+	":viento" -> ":instrumento" [ label = "rdfs:subClassOf" ];
+	":bajo" -> ":cuerdas" [ label = "rdfs:subClassOf" ];
+	":rock" -> ":genero" [ label = "rdfs:subClassOf" ];
+	":bateria" -> ":percusion" [ label = "rdfs:subClassOf" ];
+	":pop" -> ":genero" [ label = "rdfs:subClassOf" ];
+	":sintetizador" -> ":teclado" [ label = "rdfs:subClassOf" ];
+	":timbales" -> ":percusion" [ label = "rdfs:subClassOf" ];
+
+}
