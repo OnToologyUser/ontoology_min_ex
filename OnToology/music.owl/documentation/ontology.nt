@@ -1,0 +1,263 @@
+<xml:base> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> <http://www.w3.org/2000/01/rdf-schema#domain> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> <http://www.w3.org/2000/01/rdf-schema#range> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#artista> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> <http://www.w3.org/2000/01/rdf-schema#range> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero> .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tocadoPor
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tocadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tocadoPor> <http://www.w3.org/2002/07/owl#inverseOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#artista
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#artista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#artista> <http://www.w3.org/2000/01/rdf-schema#comment> "Artista." .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bajo
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bajo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bajo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bajo> <http://www.w3.org/2000/01/rdf-schema#comment> "Bajo" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#balada
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#balada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#balada> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#balada> <http://www.w3.org/2000/01/rdf-schema#comment> "Balada" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bateria
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bateria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bateria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bateria> <http://www.w3.org/2000/01/rdf-schema#comment> "Bateria" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#clasico
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#clasico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#clasico> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#clasico> <http://www.w3.org/2000/01/rdf-schema#comment> "\n  \t\t\tRock clasico\n \t\t" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas> <http://www.w3.org/2000/01/rdf-schema#comment> "Instrumentos de cuerdas" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#dance
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#dance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#dance> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#dance> <http://www.w3.org/2000/01/rdf-schema#comment> "Dance" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero> <http://www.w3.org/2002/07/owl#disjointWith> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero> <http://www.w3.org/2000/01/rdf-schema#comment> "Generos musicales." .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarra
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarra> <http://www.w3.org/2000/01/rdf-schema#comment> "Guitarra" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarrista
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarrista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarrista> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#artista> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarrista> <http://www.w3.org/2000/01/rdf-schema#comment> "Guitarrista" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento> <http://www.w3.org/2000/01/rdf-schema#comment> "Instrumentos musicales." .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#metal
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#metal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#metal> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid21 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#metal> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\t\t\tHeavy metal\n\t\t" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#organo
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#organo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#organo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#organo> <http://www.w3.org/2000/01/rdf-schema#comment> "Organo" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion> <http://www.w3.org/2000/01/rdf-schema#comment> "Instrumentos de percusion" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop> <http://www.w3.org/2000/01/rdf-schema#comment> "Musica Pop" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> <http://www.w3.org/2000/01/rdf-schema#comment> "Rock \\m/ " .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#saxofon
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#saxofon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#saxofon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#saxofon> <http://www.w3.org/2000/01/rdf-schema#comment> "Sax" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#sintetizador
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#sintetizador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#sintetizador> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#sintetizador> <http://www.w3.org/2000/01/rdf-schema#comment> "Sintetizador" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#ska
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#ska> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#ska> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid29 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#ska> <http://www.w3.org/2000/01/rdf-schema#comment> "\n  \t\t\tSka\n \t\t" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado> <http://www.w3.org/2000/01/rdf-schema#comment> "Instrumentos con teclas" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#timbales
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#timbales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#timbales> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#timbales> <http://www.w3.org/2000/01/rdf-schema#comment> "Timbales" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#trompeta
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#trompeta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#trompeta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#trompeta> <http://www.w3.org/2000/01/rdf-schema#comment> "Trompeta" .
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento> <http://www.w3.org/2000/01/rdf-schema#comment> "Instrumentos de viento" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tommorello
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tommorello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tommorello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarrista> .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tommorello> <http://www.w3.org/2000/01/rdf-schema#comment> "Tom Morello Guitarrista de RATM" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

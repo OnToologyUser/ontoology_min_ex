@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="xml:base#"
+     xml:base="xml:base"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="xml:base"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero -->
+
+
+    <owl:ObjectProperty rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca -->
+
+
+    <owl:ObjectProperty rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca">
+        <rdfs:domain rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento"/>
+        <rdfs:range rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#artista"/>
+        <rdfs:range rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tocadoPor -->
+
+
+    <owl:ObjectProperty rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tocadoPor">
+        <owl:inverseOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#artista -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#artista">
+        <rdfs:comment>Artista.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bajo -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bajo">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas"/>
+        <rdfs:comment>Bajo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#balada -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#balada">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Balada</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bateria -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#bateria">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion"/>
+        <rdfs:comment>Bateria</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#clasico -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#clasico">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>
+  			Rock clasico
+ 		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento"/>
+        <rdfs:comment>Instrumentos de cuerdas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#dance -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#dance">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Dance</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero">
+        <owl:disjointWith rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento"/>
+        <rdfs:comment>Generos musicales.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarra -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarra">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas"/>
+        <rdfs:comment>Guitarra</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarrista -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarrista">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#artista"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Guitarrista</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento">
+        <rdfs:comment>Instrumentos musicales.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#metal -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#metal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#cuerdas"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>
+			Heavy metal
+		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#organo -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#organo">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado"/>
+        <rdfs:comment>Organo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento"/>
+        <rdfs:comment>Instrumentos de percusion</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#pop">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero"/>
+        <rdfs:comment>Musica Pop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#genero"/>
+        <rdfs:comment>Rock \m/ </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#saxofon -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#saxofon">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento"/>
+        <rdfs:comment>Sax</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#sintetizador -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#sintetizador">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado"/>
+        <rdfs:comment>Sintetizador</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#ska -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#ska">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#subgenero"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#toca"/>
+                        <owl:allValuesFrom rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>
+  			Ska
+ 		</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#teclado">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento"/>
+        <rdfs:comment>Instrumentos con teclas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#timbales -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#timbales">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#percusion"/>
+        <rdfs:comment>Timbales</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#trompeta -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#trompeta">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento"/>
+        <rdfs:comment>Trompeta</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento -->
+
+
+    <owl:Class rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#viento">
+        <rdfs:subClassOf rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#instrumento"/>
+        <rdfs:comment>Instrumentos de viento</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tommorello -->
+
+
+    <owl:NamedIndividual rdf:about="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#tommorello">
+        <rdf:type rdf:resource="file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#guitarrista"/>
+        <rdfs:comment>Tom Morello Guitarrista de RATM</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
