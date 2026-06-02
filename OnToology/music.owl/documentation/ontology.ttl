@@ -154,7 +154,7 @@
                                                                                       rdf:type owl:Class
                                                                                     ] ;
                                                                 rdfs:comment """
-			Heavy metal
+			Metal
 		""" .
 
 

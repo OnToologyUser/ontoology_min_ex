@@ -166,7 +166,7 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#rock> .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#metal> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\t\t\tHeavy metal\n\t\t" .
+<file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#metal> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\t\t\tMetal\n\t\t" .
 # 
 # file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#organo
 <file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#organo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

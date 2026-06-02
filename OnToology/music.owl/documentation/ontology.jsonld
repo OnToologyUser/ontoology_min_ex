@@ -275,7 +275,7 @@
   "@id" : "file:/home/ahmad/repos/nheuser@uni-koblenz.de/music.owl#metal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\n\t\t\tHeavy metal\n\t\t"
+    "@value" : "\n\t\t\tMetal\n\t\t"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid21"
